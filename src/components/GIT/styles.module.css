@@ -1,0 +1,138 @@
+.git{
+    width: 100%;
+    height: auto;
+    padding: 2rem 25rem;
+    display: block;
+    background: url(../../assets/drop.png);
+    background-size: cover;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 100px;
+}
+.card{
+    width: 100%;
+    height: 45rem;
+    border-radius: 10px;
+  
+}
+.green{
+    background: #009a4e;
+    padding: 3rem;
+    height: 35rem;
+}
+.green h3{
+    color: white;
+}
+.green input[type="text"],[type="number"],[type="email"]{
+   background: none;
+   color: white;
+   border: none;
+   border-bottom: 1px solid white;
+   border-radius: 0;;
+   height: 3rem;
+   margin-bottom: 2rem;
+}
+.green textarea{
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;;
+    height: 3rem;
+ }
+.green input::placeholder{color: white;}
+.green textarea::placeholder{color: white;}
+.cardSm{
+    width: 100%;
+    height: 8rem;
+   border: 1px solid gainsboro;
+   border-radius: 10px;
+   margin-bottom: 2rem;
+}
+.cardLg{
+    height: 25rem;
+}
+.cgrid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.icon{
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+}
+.text{
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+}
+.text a{
+   text-decoration: none;
+   color: goldenrod;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(211, 208, 163, 0.4);
+    padding: 1rem;
+    text-align: center;
+    color: goldenrod;
+}
+.circle h1{font-size: 2rem;}
+
+
+
+
+@media (max-height: 500px) {
+    .git{
+        padding: 10px;
+    }
+    .grid{
+    grid-template-columns: 100%;
+    }
+
+   
+  }
+  
+  @media (max-width: 640px) {
+    .git{
+        padding: 10px;
+    }
+    .grid{
+        grid-template-columns: 100%;
+        }
+      
+  }
+  
+  @media (max-height: 600px) {
+    .git{
+        padding: 10px;
+    }
+  
+    .grid{
+        grid-template-columns: 100%;
+        }
+      
+  }
+  
+  @media (max-width: 640px) {
+    .git{
+        padding: 10px;
+    }
+    .grid{
+        grid-template-columns: 100%;
+        }
+        
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .git{
+        padding: 10px;
+    }
+    .grid{
+        grid-template-columns: 100%;
+        }
+  }

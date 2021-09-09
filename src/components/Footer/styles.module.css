@@ -1,0 +1,95 @@
+.footer{
+    width: 100%;
+    height: auto;
+    display: block;
+    background: url(../../assets/pattern-bg.png) center #009a4e;
+    padding: 5rem 15rem;
+    background-size: cover;
+    background-position: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 31% 51% 19%;
+    grid-gap: 30px;
+}
+.card{
+    width: 100%;
+    height: 20rem;
+    color: white;
+}
+.card ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.card ul a li{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+    line-height: 2rem;
+    font-size: 16px;
+}
+.card img{
+    width: 20%;
+    display: block;
+    margin-bottom: 1rem;
+}
+.card a{
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+}
+
+
+
+@media (max-height: 500px) {
+    .footer{
+        padding: 10px;
+    }
+    .grid{
+    grid-template-columns: 100%;
+    }
+
+   
+  }
+  
+  @media (max-width: 640px) {
+    .footer{
+        padding: 10px;
+    }
+    .grid{
+        grid-template-columns: 100%;
+        }
+      
+  }
+  
+  @media (max-height: 600px) {
+    .footer{
+        padding: 10px;
+    }
+  
+    .grid{
+        grid-template-columns: 100%;
+        }
+      
+  }
+  
+  @media (max-width: 640px) {
+    .footer{
+        padding: 10px;
+    }
+    .grid{
+        grid-template-columns: 100%;
+        }
+        
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .footer{
+        padding: 10px;
+    }
+    .grid{
+        grid-template-columns: 100%;
+        }
+  }

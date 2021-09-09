@@ -1,0 +1,150 @@
+.about{
+    width: 100%;
+    height: auto;
+    padding: 2rem 15rem;
+    display: block;
+    background: url(../../assets/drop.png);
+    background-size: cover;
+}
+.card{
+    width: 100%;
+    height: auto;
+    padding: 5rem 3rem;
+}
+
+.card p{
+    text-align: justify;
+}
+
+
+
+    
+@media (max-height: 500px) {
+    .about{
+        padding: 10px;
+    }
+    .grid{
+    grid-template-columns: 100%;
+    }
+    .card{
+        height: auto;
+        }
+        .pcard{
+            height: auto;
+            }
+        .aboutpage{
+           padding: 10px;
+        }
+        .pgrid{
+            display: grid;
+            grid-template-columns: 100%;
+        }
+        .text{
+            padding: 10px;
+        }
+   
+  }
+  
+  @media (max-width: 640px) {
+    .about{
+        padding: 10px;
+    }
+    .grid{
+        grid-template-columns: 100%;
+        }
+        .card{
+            height: auto;
+            }
+            .pcard{
+                height: auto;
+                }
+            .aboutpage{
+               padding: 10px;
+            }
+            .pgrid{
+                display: grid;
+                grid-template-columns: 100%;
+            }
+            .text{
+                padding: 10px;
+            }
+    
+  }
+  
+  @media (max-height: 600px) {
+    .about{
+        padding: 10px;
+    }
+  
+    .grid{
+        grid-template-columns: 100%;
+        }
+        .card{
+            height: auto;
+            }
+            .pcard{
+                height: auto;
+                }
+            .aboutpage{
+               padding: 10px;
+            }
+            .pgrid{
+                display: grid;
+                grid-template-columns: 100%;
+            }
+            .text{
+                padding: 10px;
+            }
+    
+  }
+  
+  @media (max-width: 640px) {
+    .about{
+        padding: 10px;
+    }
+    .grid{
+        grid-template-columns: 100%;
+        }
+        .card{
+            height: auto;
+            }
+            .pcard{
+                height: auto;
+                }
+            .aboutpage{
+               padding: 10px;
+            }
+            .pgrid{
+                display: grid;
+                grid-template-columns: 100%;
+            }
+            .text{
+                padding: 10px;
+            }
+    
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .about{
+        padding: 10px;
+    }
+    .grid{
+        grid-template-columns: 100%;
+        }
+        .card{
+            height: auto;
+            }
+            .pcard{
+                height: auto;
+                }
+            .aboutpage{
+               padding: 10px;
+            }
+            .pgrid{
+                display: grid;
+                grid-template-columns: 100%;
+            }
+            .text{
+                padding: 10px;
+            }
+    
+  }

@@ -1,0 +1,401 @@
+.navbar{
+    width: 80%;
+    height: 5rem;
+    background:  linear-gradient(0deg, rgba(0, 154, 78, 0.4), rgba(0, 154, 78, 0.5)),url(../../assets/pattern-bg.png);
+    margin: 0 auto;
+    background: url(../../assets/pattern-bg.png) center #009a4e;
+    color: #fff;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    padding: 1rem;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    z-index: 3;
+    box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.02),
+    0px 2px 4px -2px rgba(0,0,0,0.08),
+    0px 4px 8px -4px rgba(0,0,0,0.10),
+    0px 8px 16px -8px rgba(0,0,0,0.12);
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 6% 94%;
+}
+.bar{
+    display: none;
+}
+.logo{
+    width: 100%;
+    height: 4rem;
+}
+.logo img{
+    width: 100%;
+    max-height: 4rem;
+}
+.navLinks{
+    width: 100%;
+    height: 4rem;
+    padding: .5rem;
+}
+.navLinks ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks ul a li{
+    width: 13%;
+    padding: 0;
+    margin: 0;
+    float: left;
+    list-style: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.navLinks ul a li:hover .dropdown{
+    display: block;
+}
+.navLinks ul a li:hover .dropdowns{
+    display: block;
+}
+.grids{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.dropdown{
+    /* width: 100%; */
+    height: auto;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);/*Adds a drop shadow*/
+    z-index: 1;
+    border-radius: 2%;
+    margin-top: 1rem;
+}
+.dropdowns{width: 100%; height: auto;display: none;position: absolute;background:white;z-index: 1;margin-top: 1rem;margin-left: -43%;padding: 1rem;
+}
+
+.dropdown ul{width: 100%;padding: 0;margin: 0;}
+
+.dropdown ul a li{width: 100%;padding: 0;margin: 0;float: left;list-style: none;text-align: center;color: #009a4e;font-weight: bold;line-height: 3rem;}
+.dropdown ul a li:hover{background: #009a4e;color: white;font-weight: bold;line-height: 3rem;}
+
+.dropdown:after{
+    content:''; /* Required to display content */
+    position: absolute; /* Sets the position absolute to the top div */
+    top: 0;
+    left: 35%;/* position the little arrow */
+    margin-left: -15px;
+    margin-top:-15px; /* Set margin equal to border px */
+    width: 0;
+    z-index:1;
+    height: 0;
+    border-bottom: solid 15px #FFF; /* Creates the arrow pointing up, to change to a notch instead user border-top */
+    border-left: solid 15px transparent; /* Creates triangle effect */
+    border-right: solid 15px transparent; /* Creates triangle effect */
+}
+.dropdowns:after{
+    content:''; position: absolute; top: 0;left: 35%;margin-left: 200px;margin-top:-15px;width: 0;z-index:1;height: 0;border-bottom: solid 15px #FFF; border-left: solid 15px transparent; border-right: solid 15px transparent;
+}
+
+
+.cgrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.pix{width: 100%;padding:0;overflow: hidden; height: 15rem;}
+.pix{width: 100%;padding:1rem; height: 15rem;}
+.pix img{width: 100%; max-height: 15rem;}
+
+.url ul{width: 100%;padding: 0;margin: 0;}
+.url ul a li{width: 100%;padding: 0;margin: 0;float: left;list-style: none;text-align: left;color:black;font-weight: bold;line-height: 3rem;font-size: 12px;}
+.url ul a li:hover{background: #009a4e;color: white;font-weight: bold;line-height: 3rem;}
+
+
+
+
+    
+@media (max-height: 500px) {
+    .navbar{
+        padding: 0px;
+        width: 100%;
+        top: 0;
+        margin: 0;
+      border-radius: 0;
+      position: fixed;
+    }
+    .bar{
+        width: 20%;
+        display: block;
+        float: left;
+        padding: 10px;
+    }
+    .bar svg{
+        font-size: 40px;
+    }
+    .grid{
+        display: block;
+    }
+    .logo{
+        width: 80%;
+        float: left;
+        text-align: center;
+        padding: 10px;
+      
+    }
+    .logo img{
+        width: 30%;
+    }
+    .navLinks ul{
+       display: none;
+    }
+    .navActive{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        background: url(../../assets/pattern-bg.png) center #009a4e;
+        z-index: 9999;
+        position: relative;
+    }
+    .navActive ul a li{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+        list-style: none;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        height: 3rem;
+        
+    }
+
+   
+  }
+  
+  @media (max-width: 640px) {
+    .navbar{
+        padding: 0px;
+        width: 100%;
+        top: 0;
+        margin: 0;
+      border-radius: 0;
+      position: fixed;
+    }
+    .bar{
+        width: 20%;
+        display: block;
+        float: left;
+        padding: 10px;
+    }
+    .bar svg{
+        font-size: 40px;
+    }
+    .grid{
+        display: block;
+    }
+    .logo{
+        width: 80%;
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .logo img{
+        width: 30%;
+    }
+    .navLinks ul{
+       display: none;
+    }
+    .navActive{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        background: url(../../assets/pattern-bg.png) center #009a4e;
+        z-index: 9999;
+        position: relative;
+    }
+    .navActive ul a li{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+        list-style: none;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        height: 3rem;
+        
+    }
+  }
+  
+  @media (max-height: 600px) {
+    
+    .navbar{
+        padding: 0px;
+        width: 100%;
+        top: 0;
+        margin: 0;
+      border-radius: 0;
+      position: fixed;
+    }
+    .bar{
+        width: 20%;
+        display: block;
+        float: left;
+        padding: 10px;
+    }
+    .bar svg{
+        font-size: 40px;
+    }
+    .grid{
+        display: block;
+    }
+    .logo{
+        width: 80%;
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .logo img{
+        width: 30%;
+    }
+    .navLinks ul{
+       display: none;
+    }
+    .navActive{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        background: url(../../assets/pattern-bg.png) center #009a4e;
+        z-index: 9999;
+        position: relative;
+    }
+    .navActive ul a li{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+        list-style: none;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        height: 3rem;
+        
+    }  
+  }
+  
+  @media (max-width: 640px) {
+ 
+    .navbar{
+        padding: 0px;
+        width: 100%;
+        top: 0;
+        margin: 0;
+      border-radius: 0;
+      position: fixed;
+    }
+    .bar{
+        width: 20%;
+        display: block;
+        float: left;
+        padding: 10px;
+    }
+    .bar svg{
+        font-size: 40px;
+    }
+    .grid{
+        display: block;
+    }
+    .logo{
+        width: 80%;
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .logo img{
+        width: 30%;
+    }
+    .navLinks ul{
+       display: none;
+    }
+    .navActive{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        background: url(../../assets/pattern-bg.png) center #009a4e;
+        z-index: 9999;
+        position: relative;
+    }
+    .navActive ul a li{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+        list-style: none;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        height: 3rem;
+        
+    }
+
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .navbar{
+        padding: 0px;
+        width: 100%;
+        top: 0;
+        margin: 0;
+      border-radius: 0;
+      position: fixed;
+    }
+    .bar{
+        width: 20%;
+        display: block;
+        float: left;
+    }
+    .bar svg{
+        font-size: 40px;
+        padding: 10px;
+    }
+    .grid{
+        display: block;
+    }
+    .logo{
+        width: 80%;
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .logo img{
+        width: 30%;
+    }
+    .navLinks ul{
+       display: none;
+    }
+    .navActive{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        background: url(../../assets/pattern-bg.png) center #009a4e;
+        z-index: 9999;
+        position: relative;
+    }
+    .navActive ul a li{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+        list-style: none;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        height: 3rem;
+        
+    }
+  }

@@ -1,0 +1,21 @@
+.banner{
+    width: 100%;
+    height: 30rem;
+    background: linear-gradient(180deg, rgba(0,153,78,0.3), rgba(0,153,78,0.2), rgba(0,153,78,0.8)),url(../../assets/slide6.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+    padding-top: 20rem;
+    }
+
+    
+.banner h1{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
+
